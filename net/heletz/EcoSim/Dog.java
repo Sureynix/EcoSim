@@ -9,10 +9,10 @@ public class Dog extends Animal {
     }
     @Override
     public void move(int x, int y) {
-        x*=0.5;
-        y*=0.5;
-        setXpos(getXpos() + x);
-        setYpos(getYpos() + y);
+        x--;
+        y--;
+        setxPos(getxPos() + x);
+        setyPos(getyPos() + y);
     }
     @Override
     public String getType () {

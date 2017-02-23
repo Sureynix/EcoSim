@@ -6,14 +6,14 @@ package net.heletz.EcoSim;
 public class Animal
 {
     private String name;
-    private int xpos;
-    private int ypos;
+    private int xPos;
+    private int yPos;
 
     public Animal(String name, int initX, int initY)
     {
         this.setName(name);
-        xpos=initX;
-        ypos=initY;
+        xPos =initX;
+        yPos =initY;
     }
     public void move(int x, int y){}//child should override
 
@@ -30,24 +30,24 @@ public class Animal
         this.name = name;
     }
 
-    public int getXpos()
+    public int getxPos()
     {
-        return xpos;
+        return xPos;
     }
 
-    public int getYpos()
+    public int getyPos()
     {
-        return ypos;
+        return yPos;
     }
 
-    public void setYpos(int ypos)
+    public void setyPos(int yPos)
     {
-        this.ypos=ypos;
+        this.yPos = yPos;
     }
 
-    public void setXpos(int xpos)
+    public void setxPos(int xPos)
     {
-        this.xpos=xpos;
+        this.xPos = xPos;
     }
 
 }

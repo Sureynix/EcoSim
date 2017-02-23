@@ -11,7 +11,11 @@ public class Cat extends Animal {
     public void move(int x, int y) {
         x*=2;
         y*=2;
-        setXpos(getXpos() + x);
-        setYpos(getYpos() + y);
+        setxPos(getxPos() + x);
+        setyPos(getyPos() + y);
+    }
+    @Override
+    public String getType () {
+        return "Cat";
     }
 }
