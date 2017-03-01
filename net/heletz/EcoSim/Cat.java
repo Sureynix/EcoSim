@@ -4,8 +4,8 @@ package net.heletz.EcoSim;
  * Created by Sureynix on 2/22/17.
  */
 public class Cat extends Animal {
-    public Cat (String name, int initX, int initY) {
-        super(name, initX, initY);
+    public Cat (String name, int initX, int initY, int energy) {
+        super(name, initX, initY, energy);
     }
     @Override
     public void move(int x, int y) {

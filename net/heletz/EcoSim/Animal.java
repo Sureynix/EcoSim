@@ -1,19 +1,21 @@
 package net.heletz.EcoSim;
 
 /**
- * Created by Sureynix on 2/21/17.
+ * Created by Sureynix on 2/21/17. Copyright United States of Myraq.
  */
 public class Animal
 {
     private String name;
     private int xPos;
     private int yPos;
+    private int energy;
 
-    public Animal(String name, int initX, int initY)
+    public Animal(String name, int initX, int initY, int initEnergy)
     {
         this.setName(name);
         xPos =initX;
         yPos =initY;
+        energy = initEnergy;
     }
     public void move(int x, int y){}//child should override
 
@@ -49,6 +51,16 @@ public class Animal
     {
         this.xPos = xPos;
     }
+
+    public int getEnergy()
+    {
+        return energy;
+    }
+
+    public void setEnergy(int power) {
+        energy = power;
+    }
+
 
 }
 

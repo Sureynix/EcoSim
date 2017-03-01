@@ -6,9 +6,11 @@ package net.heletz.EcoSim;
 public class PositionList {
     int x;
     int y;
-    public PositionList (int a, int b) {
+    int e;
+    public PositionList (int a, int b, int c) {
         x = a;
         y = b;
+        e = c;
     }
     public int getX () {
         return x;
@@ -16,4 +18,8 @@ public class PositionList {
     public int getY () {
         return y;
     }
+    public int getE () {
+        return e;
+    }
+
 }
